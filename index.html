@@ -12,20 +12,21 @@
       <div class="main-container">
         <div class="user signIn-box">
           <div class="imgBox">
-            <img src="./img/git.jpeg" alt="GitOcto Statue" />
+            <img src="./img/git.jpeg" alt="GitOcto Statue" id="imgBox" />
           </div>
           <div class="formBox">
             <!-- <form method="POST" action="secret.html"> -->
-            <form>
-              <h2>Sign In</h2>
-              <input type="text" placeholder="Username or Email" />
-              <input type="password" placeholder="Password" />
+            <form onSubmit="return false;">
+              <h2 id="h2-signin-up">Sign In</h2>
+              <input id="form-ask" type="text" placeholder="Username or Email" />
+              <input id="form-password" type="password" placeholder="Password" />
+              <!-- <button onclick="clickForm()">Sign In!</button> -->
               <input
                 type="submit"
                 value="Sign In"
                 onclick="clickForm()"
               ></input>
-           <!-- RICKROLL LINK="https://www.youtube.com/watch?v=dQw4w9WgXcQ" -->
+              <!-- RICKROLL LINK="https://www.youtube.com/watch?v=dQw4w9WgXcQ" -->
               <p class="signUp">
                 Don't have an account?
                 <a href="#" onclick="toggleForm();">Sign Up</a>
@@ -37,13 +38,12 @@
         <div class="user signUp-box">
           <div class="formBox">
             <form>
-              <h2>Create An Account!</h2>
+              <h2 id="h2-signin-up">Create An Account!</h2>
               <input type="text" placeholder="Username" />
               <input type="text" placeholder="Email address" />
               <input type="password" placeholder="Password" />
               <input type="password" placeholder="Re-enter your password" />
-              <input type="submit" value="Sign Up" onclick="clickForm()"
-              />
+              <input type="submit" value="Sign Up" onclick="clickForm()" />
               <p class="signUp">
                 Already have an account?
                 <a href="#" onclick="toggleForm();">Sign In</a>
