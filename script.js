@@ -11,7 +11,17 @@ function clickForm() {
   document.getElementById("h2-signin-up").innerHTML = "RickRoll'd";
   document.getElementById("imgBox").src =
     "https://i.pinimg.com/originals/f7/85/7f/f7857f7dc8194d91da6b825d3ab90fce.gif";
+  let section = document.querySelector("section");
   section.classList.toggle("changed");
+}
+function stopSecret() {
+  // window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  audio.pause();
+  document.getElementById("h2-signin-up").innerHTML = "RickRoll'd";
+  document.getElementById("imgBox").src =
+    "https://i.pinimg.com/originals/f7/85/7f/f7857f7dc8194d91da6b825d3ab90fce.gif";
+  let section = document.querySelector("section");
+  section.classList.toggle("removed");
 }
 
 let audio = new Audio("./yes.mp3");
